@@ -49,7 +49,7 @@ class MarkovMachine {
 
   /** return random text from chains */
 
-  makeText(numWords = 100) {
+  makeText(numWords = 50) {
     
     //create new  array instance from the chains object with only the keys 
     let keys = Array.from(this.chains.keys())
