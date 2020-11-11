@@ -32,7 +32,7 @@ class MarkovMachine {
       let nextWord = this.words[i + 1] || null;
 
       // If the actual element exist -> It will get the specified element and will push to the nextWord
-      if(chains.has(word)) chain.get(word).push(nextWord)
+      if(chains.has(word)) chains.get(word).push(nextWord)
       // If the actual element does not exist -> It will add/update the actual word with the actual nextWord as a value 
       else chains.set(word, [nextWord])
     }
